@@ -1,7 +1,11 @@
-.img-container{
+body{
+    overflow-x: hidden;
+}
+
+img{
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 80%;
     transform: translate(-50%, -50%);
     animation: appearLeft 2s;
     
@@ -15,3 +19,11 @@
 
 
 } 
+
+.z-1000{
+    z-index: 1000;
+}
+
+li{
+    list-style: none;
+}

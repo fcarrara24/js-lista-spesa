@@ -11,20 +11,24 @@ do {
     //if he inserts items with spaces
     substring = elemento.split(" ");
     for (let i = 0; i < substring.length; i++) {
-        if (substring[i] !== 'stop') {
+        if (substring[i] !== 'stop' && substring[i] !== '') {
             listaDaAcqiuistare.push(substring[i])
 
         } else {
             stop = true;
+
             break;
         }
     }
 
 } while (!stop);
 
+resultEl.innerHTML = `<ul>
+                            `
 for (let i = 0; i < listaDaAcqiuistare.length; i++) {
     console.log(listaDaAcqiuistare[i]);
-    resultEl.innerHTML += `${listaDaAcqiuistare[i]}, `
+    resultEl.innerHTML += `<li> ${listaDaAcqiuistare[i]} </li> `
 }
+resultEl.innerHTML += `</ul>`
 
 resultEl.classList.remove('d-none');
