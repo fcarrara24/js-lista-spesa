@@ -1,0 +1,17 @@
+.img-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: appearLeft 2s;
+    
+}
+
+@keyframes appearLeft {
+    0% {transform: translate(-2000%, -50%); }
+    80% {transform: translate(-50%, -50%); }
+    90%{transform: rotate(30deg) translate(-50%, -50%)}
+    100%{transform: rotate(0) translate(-50%, -50%); }
+
+
+} 
