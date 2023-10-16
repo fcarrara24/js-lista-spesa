@@ -5,13 +5,15 @@ const resultEl = document.querySelector('.alert');
 let listaDaAcqiuistare = [];
 let substring = []
 let stop = false;
-
 do {
+
+
+
     elemento = prompt('inserire gli elementi da acquistare; scrivere "stop" per finire');
     //if he inserts items with spaces
     substring = elemento.split(" ");
     for (let i = 0; i < substring.length; i++) {
-        if (substring[i] !== 'stop' && substring[i] !== '') {
+        if (substring[i] !== 'stop') {
             listaDaAcqiuistare.push(substring[i])
 
         } else {
